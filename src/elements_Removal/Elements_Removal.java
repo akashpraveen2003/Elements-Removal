@@ -11,7 +11,8 @@ import java.util.Scanner;
 	Find the minimum cost to remove all elements from the array.
 
 	Input 1:
-	
+						1st => 2+1 =3
+      						2nd => 1+0 =1 (total 4)
 	A = [2, 1]
 	
 	Input 2:
@@ -34,7 +35,7 @@ public class Elements_Removal {
 		for(int i=array.length-1;i>=0;i--)		// Always pick largest element to minimize the cost
 		{			
 			answer+=sum;		
-			sum-=array[i];						// We subtract the added element from the total sum
+			sum-=array[i];				// We subtract the added element from the total sum
 		}
 		System.out.println(answer);		
 	}
